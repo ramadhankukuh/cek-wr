@@ -2,7 +2,7 @@ function welcomeMsg() {
     const welcomeMsgEl = document.querySelector("#welcomeMsg");
     let array = 0;
 
-    const msg1 = `<p class="animation mb-0 text-truncate">Salam kenal buat all user</p>`;
+    const msg1 = `<p class="animation mb-0 text-truncate">Salam kenal buat all user ML</p>`;
     const msg2 = `<p class="animation mb-0 text-truncate">Jangan lupa follow sosmed gua dibawah ya</p>`;
     const msg3 = `<p class="animation mb-0 text-truncate">Follow ML gw -> '</p>`;
     const msg4 = `<p class="animation mb-0 text-truncate">Bagi yang mau donasi ke saya, pc WA ya</p>`;
