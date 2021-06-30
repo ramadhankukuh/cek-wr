@@ -14,6 +14,30 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/MobileLegends.png" type="image/x-icon">
 </head>
+    
+    <!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>Show good morning good night wish as per time Javascript</title>
+    </head>
+    <script type="text/javascript">
+        document.write("<center><font size=+3 style='color: green;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+    </script>
+</html>
+</body>
 
 <body>
     <div class="container pb-4">
