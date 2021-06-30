@@ -46,6 +46,56 @@
                 <hr>
                 <a href="winlose.html" class="btn btn-primary d-block w-100" type="button" id="hasil">Ingin tahu total win atau lose anda?</button>
                 <a href="losestreak.html" class="text-center d-block text-primary mb-2">Hitung WR dengan lose streak</a>
+                <style type="text/css" scoped="scoped">
+    :root {  
+    --main-bg-color: #ffffff; /* background */  
+    --text-color: #003cff; /* warna text (biru) */ 
+    --text-dark-color: #000000; /* warna text gelap */ 
+    --font-txt: 'Poppins' , Sans-serif; /* font text */ 
+    --font-id: 'Lobster', cursive; /* font hari raya idul fitri */ 
+    }
+    
+    #idulfitri2021{background:var(--main-bg-color);color:var(--text-color);font-family:var(--font-txt);font-size:15px;text-transform:capitalize;text-align:center;padding:20px;font-weight:normal;border-radius:3px;line-height:20px}
+    .teks {color:var(--text-dark-color)}
+    .idulFitri{font-size:20px;display:block;font-weight:normal;color:var(--text-color);font-family: var(--font-id)}
+    
+    /* Font */
+    @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2')}
+    @font-face{font-family:'Lobster';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoKmMw.woff2) format('woff2')}
+    
+    </style>
+    <div id="idulfitri2021">
+    <span id="countdown"></span>
+    </div>
+    <script type='text/javascript'>
+    //<![CDATA[
+    // set the date we're counting down to
+    var target_date = new Date("Jul 19, 2021").getTime();
+    // variables for time units
+    var days, hours, minutes, seconds;
+    // get tag element
+    var countdown = document.getElementById("countdown");
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+    
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+    
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+    
+        // format countdown string + set tag value
+      countdown.innerHTML = days + " <span class=\'teks\'>hari</span> " + hours + " <span class=\'teks\'>jam</span> "
+      + minutes + " <span class=\'teks\'>menit</span> " + seconds + " <span class=\'teks\'>detik menuju </span><span class=\'idulFitri\'>Idul Adha 1442H / 2021M</span>";
+    }, 1000);
+    //]]>
+    </script>
                 <div class="d-flex justify-content-center sosmed">
                     <a class="mx-4" href="https://web.facebook.com/profile.php?id=100064366774837" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
